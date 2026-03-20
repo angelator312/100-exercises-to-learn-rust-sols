@@ -94,10 +94,6 @@ name = "arrays"
 version = "0.1.0"
 
 [[package]]
-name = "as_cast"
-version = "0.1.0"
-
-[[package]]
 name = "assoc_vs_generic"
 version = "0.1.0"
 
@@ -545,10 +541,6 @@ name = "derives"
 version = "0.1.0"
 
 [[package]]
-name = "destructor"
-version = "0.1.0"
-
-[[package]]
 name = "digest"
 version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -607,10 +599,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "encapsulation"
-version = "0.1.0"
-
-[[package]]
 name = "enum_"
 version = "0.1.0"
 dependencies = [
@@ -666,10 +654,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "factorial"
-version = "0.1.0"
-
-[[package]]
 name = "fallibility"
 version = "0.1.0"
 dependencies = [
@@ -693,10 +677,6 @@ name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
-
-[[package]]
-name = "for_"
-version = "0.1.0"
 
 [[package]]
 name = "form_urlencoded"
@@ -856,10 +836,6 @@ version = "0.1.0"
 dependencies = [
  "ticket_fields",
 ]
-
-[[package]]
-name = "heap"
-version = "0.1.0"
 
 [[package]]
 name = "heck"
@@ -1111,10 +1087,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "if_else"
-version = "0.1.0"
-
-[[package]]
 name = "if_let"
 version = "0.1.0"
 
@@ -1183,19 +1155,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "integers"
-version = "0.1.0"
-
-[[package]]
 name = "interior_mutability"
-version = "0.1.0"
-
-[[package]]
-name = "intro_01"
-version = "0.1.0"
-
-[[package]]
-name = "intro_02"
 version = "0.1.0"
 
 [[package]]
@@ -1502,10 +1462,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "modules"
-version = "0.1.0"
-
-[[package]]
 name = "mut_slice"
 version = "0.1.0"
 
@@ -1619,10 +1575,6 @@ name = "orphan"
 version = "0.1.0"
 
 [[package]]
-name = "outro_02"
-version = "0.1.0"
-
-[[package]]
 name = "outro_03"
 version = "0.1.0"
 
@@ -1638,23 +1590,11 @@ dependencies = [
 ]
 
 [[package]]
-name = "overflow"
-version = "0.1.0"
-
-[[package]]
 name = "overloading"
 version = "0.1.0"
 
 [[package]]
-name = "ownership"
-version = "0.1.0"
-
-[[package]]
 name = "packages"
-version = "0.1.0"
-
-[[package]]
-name = "panics"
 version = "0.1.0"
 
 [[package]]
@@ -1970,10 +1910,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "references_in_memory"
-version = "0.1.0"
-
-[[package]]
 name = "regex"
 version = "1.12.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2064,10 +2000,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "saturating"
-version = "0.1.0"
-
-[[package]]
 name = "scoped_threads"
 version = "0.1.0"
 
@@ -2147,13 +2079,6 @@ dependencies = [
  "itoa",
  "ryu",
  "serde",
-]
-
-[[package]]
-name = "setters"
-version = "0.1.0"
-dependencies = [
- "common",
 ]
 
 [[package]]
@@ -2252,10 +2177,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
 
 [[package]]
-name = "stack"
-version = "0.1.0"
-
-[[package]]
 name = "static"
 version = "0.1.0"
 
@@ -2304,10 +2225,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
 
 [[package]]
-name = "struct_"
-version = "0.1.0"
-
-[[package]]
 name = "syn"
 version = "2.0.108"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2338,10 +2255,6 @@ dependencies = [
  "quote",
  "syn",
 ]
-
-[[package]]
-name = "syntax"
-version = "0.1.0"
 
 [[package]]
 name = "tempfile"
@@ -2692,17 +2605,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
 
 [[package]]
-name = "validation"
-version = "0.1.0"
-dependencies = [
- "common",
-]
-
-[[package]]
-name = "variables"
-version = "0.1.0"
-
-[[package]]
 name = "variants_with_data"
 version = "0.1.0"
 dependencies = [
@@ -2718,10 +2620,6 @@ name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
-
-[[package]]
-name = "visibility"
-version = "0.1.0"
 
 [[package]]
 name = "walkdir"
@@ -2818,14 +2716,6 @@ dependencies = [
  "string_cache",
  "string_cache_codegen",
 ]
-
-[[package]]
-name = "welcome_00"
-version = "0.1.0"
-
-[[package]]
-name = "while_"
-version = "0.1.0"
 
 [[package]]
 name = "winapi-util"
