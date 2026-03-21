@@ -10,30 +10,72 @@ use std::ops::Add;
 //   It should be possible to print its debug representation.
 //
 // Tests are located in the `tests` folder—pay attention to the visibility of your types and methods.
+#[derive(Debug, Clone, Copy,PartialEq)]
 pub struct SaturatingU16 {
     value: u16,
 }
 impl From<u16> for SaturatingU16 {
     fn from(value: u16) -> Self {
-        Self { value:value.into() }
+        Self {
+            value: value.into(),
+        }
     }
-}impl From<&u16> for SaturatingU16 {
+}
+impl From<&u16> for SaturatingU16 {
     fn from(value: &u16) -> Self {
-        Self { value:(*value).into() }
+        Self {
+            value: (*value).into(),
+        }
     }
 }
 impl From<u8> for SaturatingU16 {
     fn from(value: u8) -> Self {
-        Self { value:value.into() }
+        Self {
+            value: value.into(),
+        }
     }
-}impl From<&u8> for SaturatingU16 {
+}
+impl From<&u8> for SaturatingU16 {
     fn from(value: &u8) -> Self {
-        Self { value:(*value).into() }
+        Self {
+            value: (*value).into(),
+        }
     }
 }
 impl Add for SaturatingU16 {
     type Output = SaturatingU16;
     fn add(self, next: SaturatingU16) -> Self::Output {
-        SaturatingU16{value:(self.value.wrapping_add(next.value))}
+        SaturatingU16 {
+            value: (self.value.saturating_add(next.value)),
+        }
+    }
+}
+impl Add<&SaturatingU16> for SaturatingU16 {
+    type Output = SaturatingU16;
+    fn add(self, next: &SaturatingU16) -> Self::Output {
+        SaturatingU16 {
+            value: (self.value.saturating_add(next.value)),
+        }
+    }
+}
+impl Add<&u16> for SaturatingU16 {
+    type Output = SaturatingU16;
+    fn add(self, next: &u16) -> Self::Output {
+        SaturatingU16 {
+            value: (self.value.saturating_add(*next)),
+        }
+    }
+}
+impl Add<u16> for SaturatingU16 {
+    type Output = SaturatingU16;
+    fn add(self, next: u16) -> Self::Output {
+        SaturatingU16 {
+            value: (self.value.saturating_add(next)),
+        }
+    }
+}
+impl PartialEq<u16> for SaturatingU16 {
+    fn eq(&self, next: &u16) -> bool {
+        self.value == *next
     }
 }
